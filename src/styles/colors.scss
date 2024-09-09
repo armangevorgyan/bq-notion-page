@@ -1,0 +1,33 @@
+// Neutral
+$neutral-black: #212121;
+$neutral-400: #4C4C4C;
+$neutral-300: #717171;
+$neutral-200: #89939E;
+$neutral-100: #ABBED1;
+$neutral-75: #F5F7FA;
+$neutral-white: #FFFFFF;
+
+// Primary
+$primary-500: #0060fa;
+$primary-400: #3379fb;
+$primary-300: #6692fc;
+$primary-100: #cce4fe;
+$primary-75: #e6f1ff;
+$primary-50: #f2f8ff;
+
+:export {
+  neutral-black: $neutral-black;
+  neutral-400: $neutral-400;
+  neutral-300: $neutral-300;
+  neutral-200: $neutral-200;
+  neutral-100: $neutral-100;
+  neutral-75: $neutral-75;
+  neutral-white: $neutral-white;
+
+  primary-500: $primary-500;
+  primary-400: $primary-400;
+  primary-300: $primary-300;
+  primary-100: $primary-100;
+  primary-75: $primary-75;
+  primary-50: $primary-50;
+}

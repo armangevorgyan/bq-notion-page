@@ -1,0 +1,19 @@
+// Breakpoints
+$mobile: 320px;
+$tablet: 768px;
+$laptop: 1280px;
+$desktop: 1920px;
+
+$breakpoints: (
+        mobile: 320px, //[320 - 768)
+        tablet: 768px, //[768 - 1366)
+        laptop: 1280px, //[1366 - 1920)
+        desktop: 1920px //[1920 - ),
+);
+
+:export {
+  mobile: map_get($breakpoints, mobile);
+  tablet: map_get($breakpoints, tablet);
+  laptop: map_get($breakpoints, laptop);
+  desktop: map_get($breakpoints, desktop);
+}

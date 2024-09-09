@@ -1,12 +1,10 @@
-
-import './styles/App.scss';
-import './styles/notion.scss';
+import NotionPage from './components/NotionPage/NotionPage.tsx';
 
 function App() {
 
   return (
     <div className='App'>
-        Blue Qubit
+      <NotionPage/>
     </div>
   );
 }

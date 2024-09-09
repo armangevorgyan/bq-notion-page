@@ -1,0 +1,58 @@
+@import "colors";
+@import "variables";
+
+@mixin scrollbar {
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $neutral-75;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $neutral-100;
+    border-radius: 4px;
+  }
+}
+
+//start responsive sizes
+
+@mixin mobile {
+  @media only screen and (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media only screen and (min-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+// show breakpoint
+@mixin write-breakpoint-name {
+  @each $name, $width in $breakpoints {
+    @media only screen and (min-width: $width) {
+      body::after {
+        display: none;
+        content: "Current breakpoint: #{$name}";
+      }
+    }
+  }
+}
+
+//
