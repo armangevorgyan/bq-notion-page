@@ -7,14 +7,23 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "tsc -b --watch",
+    "server:build": "tsc -b && node dist/server/server.js"
   },
   "dependencies": {
     "@notionhq/client": "^2.2.15",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.4",
+    "@udus/notion-renderer": "^1.0.0-alpha.86",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-notion-x": "^6.16.0",
-    "sass": "^1.78.0"
+    "sass": "^1.78.0",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
@@ -25,7 +34,8 @@
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
-    "typescript": "^5.5.3",
+    "nodemon": "^3.1.4",
+    "typescript": "^5.5.4",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1"
   }
